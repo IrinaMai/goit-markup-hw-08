@@ -23,3 +23,12 @@
 		color: #ffffff;
 	}
 }
+.section__title_work {
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+	.section__work {
+		display: none;
+	}
+}

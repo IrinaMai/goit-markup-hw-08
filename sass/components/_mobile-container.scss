@@ -1,14 +1,10 @@
 .container {
+	display: block;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	outline: 1px solid tomato;
-}
-.section .work {
-	padding-top: 94px;
-	padding-bottom: 94px;
-	background-color: indianred;
 }
 
 @media screen and (max-width: 1199px) {
@@ -17,6 +13,10 @@
 	}
 	.pros .container {
 		margin-top: 60px;
+	}
+	.section__team {
+		padding-top: 120px;
+		padding-bottom: 120px;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -30,5 +30,10 @@
 	}
 	.pros .container {
 		margin-top: 94px;
+	}
+	.section__work,
+	.section__team {
+		padding-top: 94px;
+		padding-bottom: 94px;
 	}
 }

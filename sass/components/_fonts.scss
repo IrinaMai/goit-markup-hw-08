@@ -4,6 +4,53 @@
 	text-transform: uppercase;
 	color: $white-color;
 }
+.pros__subtitle,
+.work__subtitle {
+	color: $title-color;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.143;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+.team__subtitle {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.187;
+	letter-spacing: 0.03em;
+	color: #212121;
+}
+.team__occupation {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.187;
+	letter-spacing: 0.03em;
+	color: #757575;
+}
+
+.pros__description {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: #757575;
+}
+.section__title_work {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.67;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $title-color;
+}
+.section__title_team {
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 1.178;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $title-color;
+}
 
 @media screen and (max-width: 1199px) {
 	.hero__title {
@@ -16,28 +63,10 @@
 		font-size: 44px;
 		line-height: 1.36;
 	}
-}
-.pros__subtitle,
-.work__subtitle {
-	color: $title-color;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 1.143;
-	text-transform: uppercase;
-	letter-spacing: 0.03em;
-}
-.pros__description {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
-	color: #757575;
-}
-.section__title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.67;
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: $title-color;
+
+	.section__title_team {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.67;
+	}
 }
