@@ -5,7 +5,8 @@
 	color: $white-color;
 }
 .pros__subtitle,
-.work__subtitle {
+.work__subtitle,
+.footer__subtitle {
 	color: $title-color;
 	font-weight: 700;
 	font-size: 14px;
@@ -28,13 +29,22 @@
 	color: #757575;
 }
 
-.pros__description {
+.pros__description,
+.footer__item {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: #757575;
 }
+.footer__address {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+}
+
 .section__title_work {
 	font-weight: 700;
 	font-size: 36px;
@@ -43,7 +53,8 @@
 	letter-spacing: 0.03em;
 	color: $title-color;
 }
-.section__title_team {
+.section__title_team,
+.section__title_clients {
 	font-weight: bold;
 	font-size: 28px;
 	line-height: 1.178;
@@ -64,7 +75,8 @@
 		line-height: 1.36;
 	}
 
-	.section__title_team {
+	.section__title_team,
+	.section__title_clients {
 		font-weight: 700;
 		font-size: 36px;
 		line-height: 1.67;

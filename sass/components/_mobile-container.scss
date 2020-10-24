@@ -6,6 +6,13 @@
 	margin-right: auto;
 	outline: 1px solid tomato;
 }
+.section__footer {
+	background-color: $bcg-dark-color;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
 
 @media screen and (max-width: 1199px) {
 	.container {
@@ -18,10 +25,21 @@
 		padding-top: 120px;
 		padding-bottom: 120px;
 	}
+	.section__clients {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.section__footer {
+		max-width: 768px;
+	}
 }
 @media screen and (max-width: 767px) {
 	.container {
 		max-width: 480px;
+	}
+	.section__clients {
+		padding-top: 0;
+		padding-bottom: 60px;
 	}
 }
 @media screen and (min-width: 1200px) {
@@ -32,7 +50,8 @@
 		margin-top: 94px;
 	}
 	.section__work,
-	.section__team {
+	.section__team,
+	.section__clients {
 		padding-top: 94px;
 		padding-bottom: 94px;
 	}
