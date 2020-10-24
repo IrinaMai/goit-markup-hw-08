@@ -1,0 +1,20 @@
+.logotype {
+	color: $acent-color;
+	font-family: raleway;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+
+	display: flex;
+	justify-content: flex-start;
+
+	&_dark {
+		color: #000000;
+	}
+	&_white {
+		color: $white-color;
+	}
+	header & {
+		margin-right: 93px;
+	}
+}
