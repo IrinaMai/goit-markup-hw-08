@@ -1,11 +1,16 @@
-@media screen and (max-width: 767px) {
-	.navigation__main,
-	.contact {
-		display: none;
-	}
+.header {
+	border-bottom: 1px solid #ececec;
+	margin-left: auto;
+	margin-right: auto;
 }
-@media screen and (max-width: 767px) {
-	logotype {
-		margin: 16px auto 16px 15px;
-	}
+
+.navigation__main,
+.contact {
+	display: none;
+}
+.header__button {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: violet;
 }
