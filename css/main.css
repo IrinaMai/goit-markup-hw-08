@@ -53,8 +53,7 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  display: flex;
-  justify-content: flex-start;
+  display: block;
 }
 
 .logotype_dark {
@@ -87,7 +86,8 @@ header .logotype {
 }
 
 @media screen and (max-width: 1199px) {
-  .container {
+  .container,
+  .footer__container {
     max-width: 768px;
   }
   .pros .container {
@@ -107,17 +107,27 @@ header .logotype {
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  .container,
+  .footer__container,
+  .portfolio {
     max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .section__clients {
     padding-top: 0;
     padding-bottom: 60px;
   }
+  .section__footer {
+    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .container,
+  .footer__container {
     width: 1200px;
   }
   .pros .container {
@@ -125,7 +135,8 @@ header .logotype {
   }
   .section__work,
   .section__team,
-  .section__clients {
+  .section__clients,
+  .section__portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -210,12 +221,29 @@ header .logotype {
 
 .section__title_team,
 .section__title_clients {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 28px;
   line-height: 1.178;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.portfolio .galery__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+.portfolio .galery__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1199px) {
@@ -271,15 +299,20 @@ header .logotype {
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .navigation__main,
   .contact {
     display: none;
   }
-}
-
-@media screen and (max-width: 767px) {
-  logotype {
-    margin: 16px auto 16px 15px;
+  .header__button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: violet;
   }
 }
 
@@ -712,7 +745,6 @@ header .logotype {
     width: 500px;
     text-align: center;
     margin-top: 5px;
-    margin-bottom: 60px;
   }
   .footer__input {
     width: 450px;
@@ -731,6 +763,7 @@ header .logotype {
   }
   .footer__container {
     display: flex;
+    justify-content: space-between;
   }
   .footer__contacts, .footer__social-list {
     width: 270px;
@@ -741,6 +774,12 @@ header .logotype {
   }
   .footer__social-list, .footer__sign-up {
     padding-top: 72px;
+  }
+  .footer__input {
+    width: 350px;
+  }
+  .footer__social-list .social-list {
+    justify-content: flex-start;
   }
 }
 /*# sourceMappingURL=main.css.map */

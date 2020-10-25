@@ -55,7 +55,7 @@
 		</header>
 
 		<main>
-			<section class="section portfolio">
+			<section class="section__portfolio portfolio">
 				<div class="container">
 					<h2 class="portfolio title visually-hidden">Наши работы</h2>
 					<!-- Filter list -->
@@ -73,12 +73,27 @@
 							<a href="" class="galery__link link">
 								<div class="galery__card">
 									<div class="galery__picture">
-										<img
-											src="./img/portfolio/tech-crack.jpg"
-											alt="3 photos of employee with occupation"
-											width="370"
-											height="294"
-										/>
+										<picture>
+											<source
+												srcset="./img/mobile/crack-mobile-min.jpg 1x, ./img/mobile/crack-mobile@2x-min.jpg 2x"
+												media="(max-width: 767px)"
+											/>
+											<source
+												srcset="./img/tablet/crack-tablet-min.jpg, ./img/tablet/crack-tablet@2x-min.jpg 2x"
+												media="(max-width: 1199px)"
+											/>
+											<source
+												srcset="./img/desctop/crack-desctop-min.jpg 1x, ./img/desctop/crack-desctop@2x-min.jpg 2x"
+												media="(min-width: 1200px)"
+											/>
+											<img
+												src="./img/mobile/crack-mobile-min.jpg"
+												alt="3 photos of employee with occupation"
+												width="370"
+												height="294"
+											/>
+										</picture>
+
 										<p class="galery__text">
 											Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу
 											для цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -95,12 +110,27 @@
 							<a href="" class="galery__link link">
 								<div class="galery__card">
 									<div class="galery__picture">
-										<img
-											src="./img/portfolio/poster.jpg"
-											alt="poster of game New Orlean vs Golden Star"
-											width="370"
-											height="294"
-										/>
+										<picture>
+											<source
+												srcset="./img/mobile/poster-mobile-min.jpg 1x, ./img/mobile/poster-mobile@2x-min.jpg 2x"
+												media="(max-width: 767px)"
+											/>
+											<source
+												srcset="./img/tablet/poster-tablet-min.jpg, ./img/tablet/poster-tablet@2x-min.jpg 2x"
+												media="(max-width: 1199px)"
+											/>
+											<source
+												srcset="./img/desctop/poster-desctop-min.jpg 1x, ./img/desctop/poster-desctop@2x-min.jpg 2x"
+												media="(min-width: 1200px)"
+											/>
+											<img
+												src="./img/mobile/poster-mobile-min.jpg"
+												alt="poster of game New Orlean vs Golden Star"
+												width="370"
+												height="294"
+											/>
+										</picture>
+
 										<p class="galery__text">
 											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi provident natus deserunt ab
 											tempora odio! Ratione, rerum! Tempore, sit numquam.
@@ -117,12 +147,30 @@
 							<a href="" class="galery__link link">
 								<div class="galery__card">
 									<div class="galery__picture">
-										<img
-											src="./img/portfolio/seafood-restaurant.jpg"
-											alt="Logo of sea-food restaurant"
-											width="370"
-											height="294"
-										/>
+										<picture>
+											<source
+												srcset="./img/mobile/restaurant-mobile-min.jpg 1x, ./img/mobile/restaurant-mobile@2x-min.jpg 2x"
+												media="(max-width: 767px)"
+											/>
+											<source
+												srcset="./img/tablet/restaurant-tablet-min.jpg, ./img/tablet/restaurant-tablet@2x-min.jpg 2x"
+												media="(max-width: 1199px)"
+											/>
+											<source
+												srcset="
+													./img/desctop/restaurant-desctop-min.jpg    1x,
+													./img/desctop/restaurant-desctop@2x-min.jpg 2x
+												"
+												media="(min-width: 1200px)"
+											/>
+											<img
+												src="./img/mobile/restaurant-mobile-min.jpg"
+												alt="Logo of sea-food restaurant"
+												width="370"
+												height="294"
+											/>
+										</picture>
+
 										<p class="galery__text">
 											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi provident natus deserunt ab
 											tempora odio! Ratione, rerum! Tempore, sit numquam.
@@ -139,7 +187,22 @@
 							<a href="" class="galery__link link">
 								<div class="galery__card">
 									<div class="galery__picture">
-										<img src="./img/portfolio/prime.jpg" alt="head-set" width="370" height="294" />
+										<picture>
+											<source
+												srcset="./img/mobile/headset-mobile-min.jpg 1x, ./img/mobile/headset-mobile@2x-min.jpg 2x"
+												media="(max-width: 767px)"
+											/>
+											<source
+												srcset="./img/tablet/headset-tablet-min.jpg, ./img/tablet/headset-tablet@2x-min.jpg 2x"
+												media="(max-width: 1199px)"
+											/>
+											<source
+												srcset="./img/desctop/headset-desctop-min.jpg 1x, ./img/desctop/headset-desctop@2x-min.jpg 2x"
+												media="(min-width: 1200px)"
+											/>
+											<img src="./img/mobile/headset-mobile-min.jpg" alt="head-set" width="370" height="294" />
+										</picture>
+
 										<p class="galery__text">
 											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi provident natus deserunt ab
 											tempora odio! Ratione, rerum! Tempore, sit numquam.
@@ -157,7 +220,22 @@
 							<a href="" class="galery__link link">
 								<div class="galery__card">
 									<div class="galery__picture">
-										<img src="./img/portfolio/boxes.jpg" alt="2 tarton boxes" width="370" height="294" />
+										<picture>
+											<source
+												srcset="./img/mobile/boxes-mobile-min.jpg 1x, ./img/mobile/boxes-mobile@2x-min.jpg 2x"
+												media="(max-width: 767px)"
+											/>
+											<source
+												srcset="./img/tablet/boxes-tablet-min.jpg, ./img/tablet/boxes-tablet@2x-min.jpg 2x"
+												media="(max-width: 1199px)"
+											/>
+											<source
+												srcset="./img/desctop/boxes-desctop-min.jpg 1x, ./img/desctop/boxes-desctop@2x-min.jpg 2x"
+												media="(min-width: 1200px)"
+											/>
+											<img src="./img/mobile/boxes-mobile-min.jpg" alt="2 tarton boxes" width="370" height="294" />
+										</picture>
+
 										<p class="galery__text">
 											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi provident natus deserunt ab
 											tempora odio! Ratione, rerum! Tempore, sit numquam.
@@ -174,12 +252,33 @@
 							<a href="" class="galery__link link">
 								<div class="galery__card">
 									<div class="galery__picture">
-										<img
-											src="./img/portfolio/inspiration-no-border.jpg"
-											alt="Dark desctope with some text"
-											width="370"
-											height="294"
-										/>
+										<picture>
+											<source
+												srcset="
+													./img/mobile/inspiration-mobile-min.jpg    1x,
+													./img/mobile/inspiration-mobile@2x-min.jpg 2x
+												"
+												media="(max-width: 767px)"
+											/>
+											<source
+												srcset="./img/tablet/inspiration-tablet-min.jpg, ./img/tablet/inspiration-tablet@2x-min.jpg 2x"
+												media="(max-width: 1199px)"
+											/>
+											<source
+												srcset="
+													./img/desctop/inspiration-desctop-min.jpg    1x,
+													./img/desctop/inspiration-desctop@2x-min.jpg 2x
+												"
+												media="(min-width: 1200px)"
+											/>
+											<img
+												src="./img/mobile/inspiration-mobile-min.jpg"
+												alt="Dark desctope with some text"
+												width="370"
+												height="294"
+											/>
+										</picture>
+
 										<p class="galery__text">
 											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi provident natus deserunt ab
 											tempora odio! Ratione, rerum! Tempore, sit numquam.
@@ -197,7 +296,21 @@
 							<a href="" class="galery__link link">
 								<div class="galery__card">
 									<div class="galery__picture">
-										<img src="./img/portfolio//limited-edition.jpg" alt="an open magazine" width="370" height="294" />
+										<picture>
+											<source
+												srcset="./img/mobile/magazin-mobile-min.jpg 1x, ./img/mobile/magazin-mobile@2x-min.jpg 2x"
+												media="(max-width: 767px)"
+											/>
+											<source
+												srcset="./img/tablet/magazin-tablet-min.jpg, ./img/tablet/magazin-tablet@2x-min.jpg 2x"
+												media="(max-width: 1199px)"
+											/>
+											<source
+												srcset="./img/desctop/magazin-desctop-min.jpg 1x, ./img/desctop/magazin-desctop@2x-min.jpg 2x"
+												media="(min-width: 1200px)"
+											/>
+											<img src="./img/mobile/magazin-mobile-min.jpg" alt="an open magazine" width="370" height="294" />
+										</picture>
 										<p class="galery__text">
 											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi provident natus deserunt ab
 											tempora odio! Ratione, rerum! Tempore, sit numquam.
@@ -214,7 +327,22 @@
 							<a href="" class="galery__link link">
 								<div class="galery__card">
 									<div class="galery__picture">
-										<img src="./img/portfolio/project-lab.jpg" alt="Tag named project-lab" width="370" height="294" />
+										<picture>
+											<source
+												srcset="./img/mobile/tag-mobile-min.jpg 1x, ./img/mobile/tag-mobile@2x-min.jpg 2x"
+												media="(max-width: 767px)"
+											/>
+											<source
+												srcset="./img/tablet/tag-tablet-min.jpg, ./img/tablet/tag-tablet@2x-min.jpg 2x"
+												media="(max-width: 1199px)"
+											/>
+											<source
+												srcset="./img/desctop/tag-desctop-min.jpg 1x, ./img/desctop/tag-desctop@2x-min.jpg 2x"
+												media="(min-width: 1200px)"
+											/>
+											<img src="./img/mobile/tag-mobile-min.jpg" alt="labelTag" width="370" height="294" />
+										</picture>
+
 										<p class="galery__text">
 											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi provident natus deserunt ab
 											tempora odio! Ratione, rerum! Tempore, sit numquam.
@@ -231,12 +359,36 @@
 							<a href="" class="galery__link link">
 								<div class="galery__card">
 									<div class="galery__picture">
-										<img
-											src="./img/portfolio/growning-business.jpg"
-											alt="Worktop with desctop and hands"
-											width="370"
-											height="294"
-										/>
+										<picture>
+											<source
+												srcset="
+													./img/mobile/grow-business-mobile-min.jpg    1x,
+													./img/mobile/grow-business-mobile@2x-min.jpg 2x
+												"
+												media="(max-width: 767px)"
+											/>
+											<source
+												srcset="
+													./img/tablet/grow-busines-tablet-min.jpg,
+													./img/tablet/grow-busines-tablet@2x-min.jpg 2x
+												"
+												media="(max-width: 1199px)"
+											/>
+											<source
+												srcset="
+													./img/desctop/grow-business-desctop-min.jpg    1x,
+													./img/desctop/grow-business-desctop@2x-min.jpg 2x
+												"
+												media="(min-width: 1200px)"
+											/>
+											<img
+												src="./img/mobile/grow-business-mobile-min.jpg"
+												alt="Worktop with desctop and hands"
+												width="370"
+												height="294"
+											/>
+										</picture>
+
 										<p class="galery__text">
 											Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi provident natus deserunt ab
 											tempora odio! Ratione, rerum! Tempore, sit numquam.

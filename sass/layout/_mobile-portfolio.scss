@@ -4,12 +4,7 @@
 }
 .filter {
 	display: flex;
-	flex-wrap: wrap;
-	align-content: space-between;
 
-	width: 450px;
-	height: 91px;
-	margin-bottom: 34px;
 	.filter__btn {
 		background-color: $bcg-lightgrey-color;
 		color: $title-color;
@@ -34,5 +29,115 @@
 	&__item:not(:last-child) {
 		margin-right: 8px;
 		align-items: center;
+	}
+}
+
+.galery__picture {
+	position: relative;
+	overflow: hidden;
+}
+.galery__text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(33, 150, 243, 0.9);
+	padding: 63px 24px;
+
+	transform: translateY(100%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.galery__link {
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover .galery__card,
+	&:focus .galery__card {
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	}
+	&:hover .galery__text,
+	&:focus .galery__text {
+		transform: translateY(0%);
+	}
+}
+.galery__description {
+	padding: 20px 24px;
+	border: 1px solid #eeeeee;
+}
+
+// ================TABLET============================
+@media screen and (max-width: 1199px) {
+	.filter.list {
+		display: flex;
+		justify-content: center;
+		width: 767px;
+		margin-bottom: 30px;
+	}
+	.galery.list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.galery__card {
+		width: 354px;
+	}
+
+	.galery__item:not(:nth-last-child(-n + 2)) {
+		margin-bottom: 30px;
+	}
+
+	.galery.list {
+		margin-bottom: 60px;
+	}
+}
+// ===============MOBILE=======================
+@media screen and (max-width: 767px) {
+	.filter.list {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+		justify-content: flex-start;
+		width: 450px;
+		height: 91px;
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+	.galery__picture {
+		width: 450px;
+	}
+
+	.galery__item:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.galery.list {
+		margin-bottom: 60px;
+	}
+}
+// ====================DESCTOP==============================
+@media screen and (min-width: 1200px) {
+	.filter.list {
+		display: flex;
+		justify-content: center;
+		width: 767px;
+		margin-bottom: 50px;
+	}
+	.galery.list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.galery__card {
+		width: 370px;
+	}
+
+	.galery__item:not(:nth-last-child(-n + 3)) {
+		margin-bottom: 30px;
+	}
+	// .galery__item:not(:nth-child(3n)) {
+	// 	margin-right: 30px;
+	// }
+
+	.galery.list {
+		margin-bottom: 60px;
 	}
 }

@@ -15,7 +15,8 @@
 }
 
 @media screen and (max-width: 1199px) {
-	.container {
+	.container,
+	.footer__container {
 		max-width: 768px;
 	}
 	.pros .container {
@@ -33,17 +34,29 @@
 		max-width: 768px;
 	}
 }
+
 @media screen and (max-width: 767px) {
-	.container {
+	.container,
+	.footer__container,
+	.portfolio {
 		max-width: 480px;
+		margin-right: auto;
+		margin-left: auto;
 	}
 	.section__clients {
 		padding-top: 0;
 		padding-bottom: 60px;
 	}
+	.section__footer {
+		width: 480px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
+
 @media screen and (min-width: 1200px) {
-	.container {
+	.container,
+	.footer__container {
 		width: 1200px;
 	}
 	.pros .container {
@@ -51,7 +64,8 @@
 	}
 	.section__work,
 	.section__team,
-	.section__clients {
+	.section__clients,
+	.section__portfolio {
 		padding-top: 94px;
 		padding-bottom: 94px;
 	}
