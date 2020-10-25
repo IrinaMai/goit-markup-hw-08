@@ -18,27 +18,53 @@
 			<!-- Main navigation -->
 			<div class="container">
 				<nav class="navigation">
+					<button type="button" class="header__button is-open" data-menu-button>
+						<svg class="header__svg">
+							<use
+								class="header__svg_line"
+								href="../img/svg/sprite-with-col.svg#icon-menu_24px"
+								width="20"
+								height="16"
+							></use>
+							<use
+								class="header__svg_cross"
+								href="../img/svg/sprite-with-col.svg#icon-close_24px"
+								width="19"
+								height="19"
+							></use>
+						</svg>
+					</button>
+					<div class="mobile__menu" hidden>
+						<ul class="navigation__main list">
+							<li class="navigation__item"><a href="./index.html" class="link navigation__item_current">Студия</a></li>
+							<li class="navigation__item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+							<li class="navigation__item"><a href="" class="link">Контакты</a></li>
+						</ul>
+						<ul class="contact list">
+							<li class="contact__item">
+								<a href="mailto:info@devstudio.com" class="contact__link link">
+									<svg class="contact__svg" width="16" height="12">
+										<use href="./img/svg/sprite.svg#icon-envelope"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="contact__item">
+								<a href="tel:+380961111111" class="contact__link link">
+									<svg class="contact__svg" width="10" height="16">
+										<use href="./img/svg/sprite.svg#icon-smartphone"></use>
+									</svg>
+									+38096111111
+								</a>
+							</li>
+						</ul>
+					</div>
+
 					<!-- LOGO -->
 					<a href="./index.html" class="logotype link" aria-label="логотип веб-студии">
 						Web
 						<span class="logotype_dark">Studio</span>
 					</a>
-					<button type="button" class="header__button">
-						<svg class="header__svg">
-							<use
-								class="header__svg_line"
-								width="24px"
-								height="16px"
-								href="../img/svg/sprite-with-col.svg#icon-menu"
-							></use>
-							<use
-								class="header__svg_cross"
-								width="19px"
-								height="19px"
-								href="../img/svg/sprite-with-col.svg#icon-close_24px"
-							></use>
-						</svg>
-					</button>
 
 					<ul class="navigation__main list">
 						<li class="navigation__item"><a href="./index.html" class="link navigation__item_current">Студия</a></li>
@@ -571,5 +597,6 @@
 		</div>
 
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

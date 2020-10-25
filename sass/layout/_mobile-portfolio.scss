@@ -66,7 +66,7 @@
 }
 
 // ================TABLET============================
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1198px) {
 	.filter.list {
 		display: flex;
 		justify-content: center;
@@ -81,7 +81,6 @@
 	.galery__card {
 		width: 354px;
 	}
-
 	.galery__item:not(:nth-last-child(-n + 2)) {
 		margin-bottom: 30px;
 	}
@@ -102,7 +101,8 @@
 		margin-top: 60px;
 		margin-bottom: 40px;
 	}
-	.galery__picture {
+	.galery__picture,
+	.galery__description {
 		width: 450px;
 	}
 
@@ -118,7 +118,6 @@
 	.filter.list {
 		display: flex;
 		justify-content: center;
-		width: 767px;
 		margin-bottom: 50px;
 	}
 	.galery.list {
@@ -130,14 +129,10 @@
 		width: 370px;
 	}
 
+	.galery__item:not(:last-child) {
+		margin-bottom: 0;
+	}
 	.galery__item:not(:nth-last-child(-n + 3)) {
 		margin-bottom: 30px;
-	}
-	// .galery__item:not(:nth-child(3n)) {
-	// 	margin-right: 30px;
-	// }
-
-	.galery.list {
-		margin-bottom: 60px;
 	}
 }
