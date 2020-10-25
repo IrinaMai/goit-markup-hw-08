@@ -55,7 +55,7 @@
 }
 .section__title_team,
 .section__title_clients {
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 28px;
 	line-height: 1.178;
 	text-align: center;
@@ -63,12 +63,32 @@
 	color: $title-color;
 }
 
+.portfolio {
+	.galery__subtitle {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 2;
+		letter-spacing: 0.06em;
+		color: $title-color;
+		margin-bottom: 4px;
+	}
+	.galery__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.55;
+		letter-spacing: 0.03em;
+		color: #ffffff;
+	}
+}
+
+// ===============TABLET=================================
 @media screen and (max-width: 1199px) {
 	.hero__title {
 		font-size: 26px;
 		line-height: 1.62;
 	}
 }
+// ================DESCTOP===============================
 @media screen and (min-width: 1200px) {
 	.hero__title {
 		font-size: 44px;

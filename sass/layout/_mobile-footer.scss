@@ -1,0 +1,162 @@
+// ===================== COMMON RULES ============================
+
+.footer__subtitle {
+	margin-bottom: 20px;
+	color: #ffffff;
+}
+
+.footer__contacts .logotype {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.footer__item:not(:last-child) {
+	margin-bottom: 8px;
+}
+.footer__link_grey {
+	color: rgba(255, 255, 255, 0.6);
+}
+.footer__social-list .social-list__svg {
+	fill: #ffffff;
+}
+.footer__social-list .social-list__link {
+	background-color: rgba(255, 255, 255, 0.1);
+	&:hover,
+	&:focus {
+		background-color: $acent-color;
+	}
+}
+.footer .social-list__svg {
+	fill: $white-color;
+}
+.footer__input {
+	border: none;
+	background-color: transparent;
+	outline: none;
+
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	padding-left: 16px;
+	padding-right: 16px;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+	&::placeholder {
+		padding-left: 16px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+	}
+}
+.footer__sign-up .button {
+	position: relative;
+	text-align: left;
+	padding-left: 28px;
+	letter-spacing: 0.06em;
+}
+.footer__svg {
+	position: absolute;
+	fill: #ffffff;
+	right: 28px;
+	top: 11px;
+}
+
+// =====================MOBILE================================
+@media screen and (max-width: 767px) {
+	.section__footer {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		max-width: 480px;
+	}
+
+	.footer__container {
+		display: block;
+		text-align: center;
+	}
+
+	.footer__social-list,
+	.footer__sign-up {
+		margin-top: 60px;
+	}
+
+	.footer__input {
+		width: 450px;
+		margin-bottom: 20px;
+	}
+}
+// ======================TABLET================================
+
+@media screen and (max-width: 1199px) {
+	.section__footer {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		max-width: 768px;
+	}
+	.footer__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.footer__contacts {
+		text-align: center;
+		width: 350px;
+		margin-bottom: 60px;
+	}
+
+	.footer__social-list {
+		display: block;
+		width: 350px;
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 60px;
+	}
+	.footer__sign-up {
+		display: block;
+		width: 500px;
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 60px;
+	}
+	.footer__input {
+		width: 450px;
+		margin-bottom: 20px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+// =========================DESCTOP=============================
+@media screen and (min-width: 1200px) {
+	.footer {
+		background-color: $bcg-dark-color;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		color: $white-color;
+		&__container {
+			display: flex;
+		}
+		&__contacts,
+		&__social-list {
+			width: 270px;
+			margin-right: 30px;
+		}
+		&__contacts {
+			padding-top: 60px;
+		}
+		&__social-list,
+		&__sign-up {
+			padding-top: 72px;
+		}
+	}
+	.footer__social-list .social-list {
+		justify-content: flex-start;
+	}
+}

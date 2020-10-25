@@ -1,5 +1,15 @@
-// @import "./utilits/variables";
-// @import "./base/common";
+@import "./utilits/variables";
+@import "./base/common";
+
+@import "./components/logo";
+@import "./components/mobile-container";
+@import "./components/button";
+@import "./components/fonts";
+@import "./components/social-list";
+
+@import "./layout/mobile-header";
+@import "./layout/mobile-footer";
+@import "./layout/mobile-portfolio";
 
 // @import "./components/logo";
 // @import "./components/_container";
