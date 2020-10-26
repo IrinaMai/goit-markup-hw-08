@@ -1,26 +1,12 @@
 .header .container {
 	border-bottom: 1px solid #ececec;
 }
-// =================TABLET===================
-@media screen and (max-width: 1199px) {
-	.mobile__menu {
-		display: flex;
-		align-items: center;
-		min-height: 80px;
-		justify-content: space-between;
-	}
-	.navigation__main.list {
-		display: flex;
-	}
-	.drop__contact {
-		display: block;
-	}
-}
+
 // ==================MOBILE=======================
 @media screen and (max-width: 767px) {
 	.header .container {
 		position: relative;
-		width: 480px;
+		max-width: 480px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		outline: 1px solid teal;
@@ -136,4 +122,19 @@
 	.header__button {
 		display: none;
 	}
+}
+// =================TABLET===================
+@media screen and (max-width: 1199px) {
+	.mobile__menu {
+		display: flex;
+		align-items: center;
+		min-height: 80px;
+		justify-content: space-between;
+	}
+	// .navigation__main.list {
+	// 	display: flex;
+	// }
+	// .drop__contact {
+	// 	display: block;
+	// }
 }

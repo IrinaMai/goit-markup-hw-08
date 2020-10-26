@@ -87,10 +87,11 @@ img {
   }
   .pros .container {
     margin-top: 60px;
+    padding-bottom: 60px;
   }
   .section__team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .section__clients {
     padding-top: 60px;
@@ -110,7 +111,7 @@ img {
     margin-left: auto;
   }
   .section__clients {
-    padding-top: 0;
+    padding-top: 60;
     padding-bottom: 60px;
   }
   .section__footer {
@@ -297,25 +298,10 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 1199px) {
-  .mobile__menu {
-    display: flex;
-    align-items: center;
-    min-height: 80px;
-    justify-content: space-between;
-  }
-  .navigation__main.list {
-    display: flex;
-  }
-  .drop__contact {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .header .container {
     position: relative;
-    width: 480px;
+    max-width: 480px;
     padding-top: 10px;
     padding-bottom: 10px;
     outline: 1px solid teal;
@@ -426,6 +412,15 @@ img {
 @media screen and (min-width: 768px) {
   .header__button {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .mobile__menu {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    justify-content: space-between;
   }
 }
 
@@ -612,6 +607,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
+  background-color: #ffffff;
 }
 
 .team__occupation {
@@ -645,9 +641,6 @@ img {
   }
   .team__item:not(:last-child) {
     margin-bottom: 30px;
-  }
-  .section__team {
-    background: #ffffff;
   }
 }
 
@@ -719,8 +712,14 @@ img {
   .clients__link {
     width: 210px;
   }
-  .clients__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
+  .clients__item {
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clients__list {
+    margin: -15px;
+    outline: 1px solid tomato;
   }
 }
 
@@ -821,7 +820,7 @@ img {
     margin-top: 60px;
   }
   .footer__input {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 }

@@ -87,10 +87,11 @@ img {
   }
   .pros .container {
     margin-top: 60px;
+    padding-bottom: 60px;
   }
   .section__team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .section__clients {
     padding-top: 60px;
@@ -110,7 +111,7 @@ img {
     margin-left: auto;
   }
   .section__clients {
-    padding-top: 0;
+    padding-top: 60;
     padding-bottom: 60px;
   }
   .section__footer {
@@ -297,25 +298,10 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 1199px) {
-  .mobile__menu {
-    display: flex;
-    align-items: center;
-    min-height: 80px;
-    justify-content: space-between;
-  }
-  .navigation__main.list {
-    display: flex;
-  }
-  .drop__contact {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .header .container {
     position: relative;
-    width: 480px;
+    max-width: 480px;
     padding-top: 10px;
     padding-bottom: 10px;
     outline: 1px solid teal;
@@ -429,6 +415,15 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .mobile__menu {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    justify-content: space-between;
+  }
+}
+
 .footer__subtitle {
   margin-bottom: 20px;
   color: #ffffff;
@@ -520,7 +515,7 @@ img {
     margin-top: 60px;
   }
   .footer__input {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 }
