@@ -1,5 +1,8 @@
 // ===================== COMMON RULES ============================
-
+.footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 .footer__subtitle {
 	margin-bottom: 20px;
 	color: #ffffff;
@@ -72,13 +75,10 @@
 // =====================MOBILE================================
 @media screen and (max-width: 767px) {
 	.section__footer {
-		padding-top: 60px;
-		padding-bottom: 60px;
-		max-width: 480px;
+		width: 100%;
 	}
 
 	.footer__container {
-		display: block;
 		text-align: center;
 	}
 
@@ -88,17 +88,17 @@
 	}
 
 	.footer__input {
-		max-width: 450px;
+		width: 100%;
 		margin-bottom: 20px;
 	}
 }
 // ======================TABLET================================
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
 	.section__footer {
-		padding-top: 60px;
-		padding-bottom: 60px;
-		max-width: 768px;
+		// padding-top: 60px;
+		// padding-bottom: 60px;
+		width: 100%;
 	}
 	.footer__container {
 		display: flex;
@@ -107,20 +107,20 @@
 	}
 	.footer__contacts {
 		text-align: center;
-		width: 350px;
+		width: 50%;
 		margin-bottom: 60px;
 	}
 
 	.footer__social-list {
 		display: block;
-		width: 350px;
+		width: 50%;
 		text-align: center;
 		margin-top: 5px;
 		margin-bottom: 60px;
 	}
 	.footer__sign-up {
 		display: block;
-		width: 500px;
+		max-width: 500px;
 		text-align: center;
 		margin-top: 5px;
 		// margin-bottom: 60px;
@@ -137,8 +137,6 @@
 @media screen and (min-width: 1200px) {
 	.footer {
 		background-color: $bcg-dark-color;
-		padding-top: 60px;
-		padding-bottom: 60px;
 		color: $white-color;
 		&__container {
 			display: flex;
@@ -146,8 +144,11 @@
 		}
 		&__contacts,
 		&__social-list {
-			width: 270px;
+			width: calc((50% - 45px) / 2);
 			margin-right: 30px;
+		}
+		&__sign-up {
+			width: calc(50% - 15px);
 		}
 		&__contacts {
 			padding-top: 60px;
