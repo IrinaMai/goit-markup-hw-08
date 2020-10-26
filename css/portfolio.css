@@ -651,6 +651,7 @@ img {
   .footer__social-list .social-list {
     justify-content: flex-start;
     padding-right: 0;
+    flex-shrink: 1;
   }
 }
 
