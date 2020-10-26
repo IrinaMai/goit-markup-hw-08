@@ -103,9 +103,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .container,
-  .footer__container,
-  .portfolio {
+  .container {
     max-width: 480px;
     margin-right: auto;
     margin-left: auto;
@@ -113,11 +111,6 @@ img {
   .section__clients {
     padding-top: 60;
     padding-bottom: 60px;
-  }
-  .section__footer {
-    width: 480px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -318,7 +311,7 @@ img {
 @media screen and (max-width: 767px) {
   .header .container {
     position: relative;
-    max-width: 480px;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0 auto;
@@ -656,6 +649,9 @@ img {
 
 .filter {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .filter .filter__btn {
@@ -719,11 +715,11 @@ img {
   border: 1px solid #eeeeee;
 }
 
-@media screen and (max-width: 1198px) {
+@media screen and (min-width: 768px) {
   .filter.list {
     display: flex;
     justify-content: center;
-    width: 767px;
+    width: 100%;
     margin-bottom: 30px;
   }
   .galery.list {
@@ -732,7 +728,7 @@ img {
     justify-content: space-between;
   }
   .galery__card {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   .galery__item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
@@ -748,14 +744,13 @@ img {
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: flex-start;
-    width: 450px;
+    width: 100%;
     height: 91px;
     margin-top: 60px;
     margin-bottom: 40px;
   }
-  .galery__picture,
-  .galery__description {
-    width: 450px;
+  .galery__card {
+    width: 100%;
   }
   .galery__item:not(:last-child) {
     margin-bottom: 30px;

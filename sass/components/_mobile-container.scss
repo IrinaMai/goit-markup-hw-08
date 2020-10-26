@@ -36,9 +36,7 @@
 }
 
 @media screen and (max-width: 767px) {
-	.container,
-	.footer__container,
-	.portfolio {
+	.container {
 		max-width: 480px;
 		margin-right: auto;
 		margin-left: auto;
@@ -47,11 +45,11 @@
 		padding-top: 60;
 		padding-bottom: 60px;
 	}
-	.section__footer {
-		width: 480px;
-		margin-right: auto;
-		margin-left: auto;
-	}
+	// .section__footer {
+	// 	width: 480px;
+	// 	margin-right: auto;
+	// 	margin-left: auto;
+	// }
 }
 
 @media screen and (min-width: 1200px) {
