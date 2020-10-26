@@ -298,6 +298,23 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+.navigation__item_current {
+  color: #2196f3;
+  position: relative;
+}
+
+.navigation__item_current::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  transform: translateY(8px);
+}
+
 @media screen and (max-width: 767px) {
   .header .container {
     position: relative;
@@ -378,21 +395,6 @@ img {
   .navigation__main .navigation__item:last-child {
     margin-bottom: 60px;
   }
-  .navigation__item_current {
-    color: #2196f3;
-    position: relative;
-  }
-  .navigation__item_current::before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #2196f3;
-    border-radius: 2px;
-    transform: translateY(8px);
-  }
   .contact.list {
     font-weight: 500;
     font-size: 18px;
@@ -415,12 +417,65 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .mobile__menu {
     display: flex;
     align-items: center;
     min-height: 80px;
     justify-content: space-between;
+  }
+  .drop__menu {
+    display: flex;
+    align-items: center;
+  }
+  .navigation__main {
+    display: flex;
+    margin-right: 85px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .navigation__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigatin__main .link:hover,
+  .navigation__main .link:focus {
+    color: #2196f3;
+  }
+  .contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #757575;
+  }
+  .contact__svg {
+    fill: #757575;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+  .contact__link:hover,
+  .contact__link:focus {
+    color: #2196f3;
+  }
+  .contact__link:hover .contact__svg,
+  .contact__link:focus .contact__svg {
+    fill: #2196f3;
+  }
+  .contact__svg {
+    margin-right: 10px;
+  }
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -589,7 +644,6 @@ img {
 
 .header {
   border-bottom: 1px solid #ececec;
-  margin-bottom: 60px;
 }
 
 .filter {
