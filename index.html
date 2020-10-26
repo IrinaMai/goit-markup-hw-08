@@ -18,9 +18,14 @@
 			<!-- Main navigation -->
 			<div class="container">
 				<nav class="navigation">
-					<div class="mobile__block">
+					<!-- LOGO -->
+					<div class="mobile__menu">
+						<a href="./index.html" class="logotype link" aria-label="логотип веб-студии">
+							Web
+							<span class="logotype_dark">Studio</span>
+						</a>
 						<button type="button" class="header__button is-open" data-menu-button>
-							<svg class="header__svg">
+							<svg class="header__svg" width="20" height="20">
 								<use
 									class="header__svg_line"
 									href="../img/svg/sprite-with-col.svg#icon-menu_24px"
@@ -35,49 +40,17 @@
 								></use>
 							</svg>
 						</button>
-						<div class="mobile__menu">
-							<ul class="mobile__menu_main list">
-								<li class="navigation__item">
-									<a href="./index.html" class="link navigation__item_current">Студия</a>
-								</li>
-								<li class="navigation__item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-								<li class="navigation__item"><a href="" class="link">Контакты</a></li>
-							</ul>
-							<ul class="mobile__contact list">
-								<li class="contact__item">
-									<a href="mailto:info@devstudio.com" class="contact__link link">
-										<svg class="contact__svg" width="16" height="12">
-											<use href="./img/svg/sprite.svg#icon-envelope"></use>
-										</svg>
-										info@devstudio.com
-									</a>
-								</li>
-								<li class="contact__item">
-									<a href="tel:+380961111111" class="contact__link link">
-										<svg class="contact__svg" width="10" height="16">
-											<use href="./img/svg/sprite.svg#icon-smartphone"></use>
-										</svg>
-										+38096111111
-									</a>
-								</li>
-							</ul>
-						</div>
 					</div>
-
-					<!-- LOGO -->
-					<a href="./index.html" class="logotype link" aria-label="логотип веб-студии">
-						Web
-						<span class="logotype_dark">Studio</span>
-					</a>
-
-					<ul class="navigation__main list">
-						<li class="navigation__item"><a href="./index.html" class="link navigation__item_current">Студия</a></li>
-						<li class="navigation__item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-						<li class="navigation__item"><a href="" class="link">Контакты</a></li>
-					</ul>
+					<div class="drop__menu is-open">
+						<ul class="navigation__main list">
+							<li class="navigation__item"><a href="./index.html" class="link navigation__item_current">Студия</a></li>
+							<li class="navigation__item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+							<li class="navigation__item"><a href="" class="link">Контакты</a></li>
+						</ul>
+					</div>
 				</nav>
 				<!-- Contacts -->
-				<address>
+				<address class="drop__contact is-open">
 					<ul class="contact list">
 						<li class="contact__item">
 							<a href="mailto:info@devstudio.com" class="contact__link link">
@@ -194,7 +167,7 @@
 									media="(max-width: 767px)"
 								/>
 								<source
-									srcset="./img/tablet/demianenko-tablet-min.jpg, ./img/tablet/demianenko-tablet@2x-min.jpg 2x"
+									srcset="./img/tablet/demianenko-tablet-min.jpg 1x, ./img/tablet/demianenko-tablet@2x-min.jpg 2x"
 									media="(max-width: 1199px)"
 								/>
 								<source
@@ -246,7 +219,7 @@
 									media="(max-width: 767px)"
 								/>
 								<source
-									srcset="./img/tablet/repina-tablet-min.jpg, ./img/tablet/repina-tablet@2x-min.jpg 2x"
+									srcset="./img/tablet/repina-tablet-min.jpg 1x, ./img/tablet/repina-tablet@2x-min.jpg 2x"
 									media="(max-width: 1199px)"
 								/>
 								<source
@@ -298,7 +271,7 @@
 									media="(max-width: 767px)"
 								/>
 								<source
-									srcset="./img/tablet/tarasov-tablet-min.jpg, ./img/tablet/tarasov-tablet@2x-min.jpg 2x"
+									srcset="./img/tablet/tarasov-tablet-min.jpg 1x, ./img/tablet/tarasov-tablet@2x-min.jpg 2x"
 									media="(max-width: 1199px)"
 								/>
 								<source
@@ -350,7 +323,7 @@
 									media="(max-width: 767px)"
 								/>
 								<source
-									srcset="./img/tablet/yermakov-tablet-min.jpg, ./img/tablet/yermakov-tablet@2x-min.jpg 2x"
+									srcset="./img/tablet/yermakov-tablet-min.jpg 1x, ./img/tablet/yermakov-tablet@2x-min.jpg 2x"
 									media="(max-width: 1199px)"
 								/>
 								<source
