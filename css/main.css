@@ -464,6 +464,13 @@ img {
     display: flex;
     align-items: center;
   }
+  .drop__menu {
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  .header .logotype {
+    margin-right: 93px;
+  }
   .contact__link:hover,
   .contact__link:focus {
     color: #2196f3;

@@ -171,6 +171,13 @@
 		display: flex;
 		align-items: center;
 	}
+	.drop__menu {
+		justify-content: space-between;
+		flex-grow: 1;
+	}
+	.header .logotype {
+		margin-right: 93px;
+	}
 	.contact__link:hover,
 	.contact__link:focus {
 		color: $acent-color;
@@ -185,11 +192,4 @@
 	.contact__item:not(:last-child) {
 		margin-right: 30px;
 	}
-	// .navigation__main {
-	// 	margin-left: 93px;
-	// 	margin-right: auto;
-	// }
-	// .drop__menu {
-	// 	justify-content: space-between;
-	// }
 }
