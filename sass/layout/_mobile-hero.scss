@@ -7,7 +7,7 @@
 }
 @media screen and (max-width: 767px) {
 	.hero {
-		max-width: 480px;
+		width: 100%;
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../img/mobile/header-mobile-min.jpg);
 	}
@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.hero {
-		max-width: 768px;
+		width: 100%;
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../img/tablet/header-tablet-min.jpg);
 	}

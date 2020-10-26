@@ -164,6 +164,9 @@
 			fill: $text-color;
 		}
 	}
+	.navigation__item_current::before {
+		transform: translateY(33px);
+	}
 }
 // ================DESCTOP==========================
 @media screen and (min-width: 1200px) {
