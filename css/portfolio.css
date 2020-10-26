@@ -629,6 +629,10 @@ img {
   .footer__sign-up {
     width: calc(50% - 15px);
   }
+  .footer__form {
+    display: inline-flex;
+    justify-content: flex-start;
+  }
   .footer__contacts {
     padding-top: 60px;
   }
@@ -637,6 +641,7 @@ img {
   }
   .footer__input {
     width: 350px;
+    margin-right: 12px;
   }
   .footer__social-list .social-list {
     justify-content: flex-start;
