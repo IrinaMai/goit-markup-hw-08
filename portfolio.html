@@ -16,10 +16,15 @@
 		<header class="header">
 			<!-- Main navigation -->
 			<div class="container">
-				<nav class="navigation">
-					<div class="mobile__block">
+				<div class="navigation">
+					<!-- LOGO -->
+					<nav class="mobile__menu">
+						<a href="./index.html" class="logotype link" aria-label="логотип веб-студии">
+							Web
+							<span class="logotype_dark">Studio</span>
+						</a>
 						<button type="button" class="header__button is-open" data-menu-button>
-							<svg class="header__svg">
+							<svg class="header__svg" width="20" height="20">
 								<use
 									class="header__svg_line"
 									href="../img/svg/sprite-with-col.svg#icon-menu_24px"
@@ -34,70 +39,39 @@
 								></use>
 							</svg>
 						</button>
-						<div class="mobile__menu">
-							<ul class="mobile__menu_main list">
+						<div class="drop__menu is-open" data-menu>
+							<ul class="navigation__main list">
 								<li class="navigation__item">
-									<a href="./index.html" class="link">Студия</a>
+									<a href="./index.html" class="link navigation__item_current">Студия</a>
 								</li>
-								<li class="navigation__item">
-									<a href="./portfolio.html" class="link navigation__item_current">Портфолио</a>
-								</li>
+								<li class="navigation__item"><a href="./portfolio.html" class="link">Портфолио</a></li>
 								<li class="navigation__item"><a href="" class="link">Контакты</a></li>
 							</ul>
-							<ul class="mobile__contact list">
-								<li class="contact__item">
-									<a href="mailto:info@devstudio.com" class="contact__link link">
-										<svg class="contact__svg" width="16" height="12">
-											<use href="./img/svg/sprite.svg#icon-envelope"></use>
-										</svg>
-										info@devstudio.com
-									</a>
-								</li>
-								<li class="contact__item">
-									<a href="tel:+380961111111" class="contact__link link">
-										<svg class="contact__svg" width="10" height="16">
-											<use href="./img/svg/sprite.svg#icon-smartphone"></use>
-										</svg>
-										+38096111111
-									</a>
-								</li>
-							</ul>
+
+							<!-- Contacts -->
+							<address class="drop__contact">
+								<ul class="contact list">
+									<li class="contact__item">
+										<a href="mailto:info@devstudio.com" class="contact__link link">
+											<svg class="contact__svg" width="16" height="12">
+												<use href="./img/svg/sprite.svg#icon-envelope"></use>
+											</svg>
+											info@devstudio.com
+										</a>
+									</li>
+									<li class="contact__item">
+										<a href="tel:+380961111111" class="contact__link link">
+											<svg class="contact__svg" width="10" height="16">
+												<use href="./img/svg/sprite.svg#icon-smartphone"></use>
+											</svg>
+											+38096111111
+										</a>
+									</li>
+								</ul>
+							</address>
 						</div>
-					</div>
-					<!-- LOGO -->
-					<a href="./index.html" class="logotype link" aria-label="логотип веб-студии">
-						Web
-						<span class="logotype_dark">Studio</span>
-					</a>
-					<ul class="navigation__main list">
-						<li class="navigation__item"><a href="./index.html" class="link">Студия</a></li>
-						<li class="navigation__item">
-							<a href="./portfolio.html" class="link navigation__item_current">Портфолио</a>
-						</li>
-						<li class="navigation__item"><a href="" class="link">Контакты</a></li>
-					</ul>
-				</nav>
-				<!-- Contacts -->
-				<address>
-					<ul class="contact list">
-						<li class="contact__item">
-							<a href="mailto:info@devstudio.com" class="contact__link link">
-								<svg class="contact__svg" width="16" height="12">
-									<use href="./img/svg/sprite.svg#icon-envelope"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
-						<li class="contact__item">
-							<a href="tel:+380961111111" class="contact__link link">
-								<svg class="contact__svg" width="10" height="16">
-									<use href="./img/svg/sprite.svg#icon-smartphone"></use>
-								</svg>
-								+38096111111
-							</a>
-						</li>
-					</ul>
-				</address>
+					</nav>
+				</div>
 			</div>
 		</header>
 

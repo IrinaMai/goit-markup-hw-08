@@ -297,6 +297,21 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 1199px) {
+  .mobile__menu {
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    justify-content: space-between;
+  }
+  .navigation__main.list {
+    display: flex;
+  }
+  .drop__contact {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header .container {
     position: relative;
@@ -405,6 +420,12 @@ img {
   .contact__svg {
     fill: #757575;
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
   }
 }
 

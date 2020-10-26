@@ -2,7 +2,20 @@
 	border-bottom: 1px solid #ececec;
 }
 // =================TABLET===================
-
+@media screen and (max-width: 1199px) {
+	.mobile__menu {
+		display: flex;
+		align-items: center;
+		min-height: 80px;
+		justify-content: space-between;
+	}
+	.navigation__main.list {
+		display: flex;
+	}
+	.drop__contact {
+		display: block;
+	}
+}
 // ==================MOBILE=======================
 @media screen and (max-width: 767px) {
 	.header .container {
@@ -65,10 +78,7 @@
 		text-align: center;
 		padding: 60px 15px;
 	}
-	// .drop__menu.is-open,
-	// .drop__contact.is-open {
-	// 	display: block;
-	// }
+
 	.drop__menu.is-open {
 		display: block;
 	}
@@ -120,5 +130,10 @@
 	.contact__svg {
 		fill: #757575;
 		margin-right: 10px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.header__button {
+		display: none;
 	}
 }
