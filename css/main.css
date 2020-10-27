@@ -910,7 +910,7 @@ img {
   }
   .footer__sign-up {
     display: block;
-    max-width: 500px;
+    max-width: 562px;
     text-align: center;
     margin-top: 5px;
   }
@@ -926,8 +926,6 @@ img {
   .footer {
     background-color: #2f303a;
     color: #ffffff;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   .footer__container {
     width: 1200px;
@@ -936,28 +934,28 @@ img {
     justify-content: space-between;
   }
   .footer__contacts, .footer__social-list {
-    width: calc(45% / 2);
-    align-self: flex-start;
-    text-align: start;
-  }
-  .footer__sign-up {
-    width: 55%;
-    align-self: flex-start;
+    width: calc((50% - 45px) / 2);
     text-align: start;
     margin-left: 0;
+    margin-right: 30px;
+  }
+  .footer__sign-up {
+    width: calc(50% - 15px);
+    text-align: start;
+    margin-left: 0;
+    margin-right: 0;
   }
   .footer__form {
     display: inline-flex;
-    justify-content: flex-start;
+    text-align: start;
   }
   .footer__input {
-    width: 300px;
-    margin-right: 10px;
+    width: 350px;
+    margin-right: 12px;
   }
   .footer__social-list .social-list {
     justify-content: flex-start;
     padding-right: 0;
-    flex-shrink: 1;
   }
 }
 

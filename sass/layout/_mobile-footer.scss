@@ -96,8 +96,6 @@
 
 @media screen and (min-width: 768px) {
 	.section__footer {
-		// padding-top: 60px;
-		// padding-bottom: 60px;
 		width: 100%;
 	}
 	.footer__container {
@@ -120,10 +118,9 @@
 	}
 	.footer__sign-up {
 		display: block;
-		max-width: 500px;
+		max-width: 562px;
 		text-align: center;
 		margin-top: 5px;
-		// margin-bottom: 60px;
 	}
 	.footer__input {
 		width: 450px;
@@ -138,8 +135,8 @@
 	.footer {
 		background-color: $bcg-dark-color;
 		color: $white-color;
-		padding-top: 60px;
-		padding-bottom: 60px;
+		// padding-top: 60px;
+		// padding-bottom: 60px;
 
 		&__container {
 			width: 1200px;
@@ -149,30 +146,29 @@
 		}
 		&__contacts,
 		&__social-list {
-			width: calc(45% / 2);
-			// margin-right: 30px;
-			align-self: flex-start;
+			width: calc((50% - 45px) / 2);
 			text-align: start;
+			margin-left: 0;
+			margin-right: 30px;
 		}
 
 		&__sign-up {
-			width: 55%;
-			align-self: flex-start;
+			width: calc(50% - 15px);
 			text-align: start;
 			margin-left: 0;
+			margin-right: 0;
 		}
 		&__form {
 			display: inline-flex;
-			justify-content: flex-start;
+			text-align: start;
 		}
 	}
 	.footer__input {
-		width: 300px;
-		margin-right: 10px;
+		width: 350px;
+		margin-right: 12px;
 	}
 	.footer__social-list .social-list {
 		justify-content: flex-start;
 		padding-right: 0;
-		flex-shrink: 1;
 	}
 }
